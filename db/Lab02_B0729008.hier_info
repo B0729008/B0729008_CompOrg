@@ -1,0 +1,38 @@
+|Lab02_B0729008
+A0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clear => inst.ACLR
+clear => inst8.ACLR
+clear => inst7.ACLR
+clear => inst6.ACLR
+clear => inst5.ACLR
+clk => inst.CLK
+clk => inst8.CLK
+clk => inst7.CLK
+clk => inst6.CLK
+clk => inst5.CLK
+X0 => Y.IN0
+X0 => inst41.IN1
+X0 => inst10.IN3
+X0 => inst12.IN1
+X2 => Y.IN1
+X2 => inst30.IN1
+X2 => inst24.IN1
+X2 => inst25.IN1
+X2 => inst22.IN0
+X1 => Y.IN2
+X1 => inst39.IN1
+X1 => inst29.IN1
+X1 => inst10.IN1
+X1 => inst14.IN1
+X3 => Y.IN3
+X3 => inst10.IN2
+X3 => inst14.IN0
+X3 => inst12.IN0
+A1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Unlock <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Lock <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A4 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
