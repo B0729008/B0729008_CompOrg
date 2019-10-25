@@ -1,0 +1,93 @@
+Quartus II
+Version 10.0 Build 218 06/27/2010 SJ Web Edition
+13
+1247
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Block2
+# storage
+db|Lab04.(0).cnf
+db|Lab04.(0).cnf
+# case_insensitive
+# source_file
+block2.bdf
+5d34537337c6f3a41f27174a3a7027
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+freq_div_1Hz
+# storage
+db|Lab04.(2).cnf
+db|Lab04.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+freq_div_1hz (1).v
+6186c0de6cce60e662e77ca19fb18481
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+CLK_IN_FREQ50000000HALF_FREQ25000000
+# end
+# entity
+Lab04
+# storage
+db|Lab04.(1).cnf
+db|Lab04.(1).cnf
+# case_insensitive
+# source_file
+lab04.bdf
+e9b2ef6ec81b596e1a2b6c98d1ead392
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
