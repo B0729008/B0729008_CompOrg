@@ -1,0 +1,15 @@
+C:/altera/10.0/Lab04/test.v {1 {vlog -work work -nocovercells C:/altera/10.0/Lab04/test.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} C:/altera/10.0/Lab04/lab04.v {1 {vlog -work work -nocovercells C:/altera/10.0/Lab04/lab04.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module lab04
+
+Top level modules:
+	lab04
+
+} {} {}}
