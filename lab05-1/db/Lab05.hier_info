@@ -1,0 +1,294 @@
+|Lab05
+lout0a <= hex0[0].DB_MAX_OUTPUT_PORT_TYPE
+clk => freq_div_1KHz:inst3.clk_in
+clean => 10bitscounter:inst.clean
+clean => BCDcounter:inst40.clean
+clean => Mod6counter:inst41.clean
+clean => BCDcounter:inst42.clean
+clean => Mod6counter:inst43.clean
+lout0b <= hex0[1].DB_MAX_OUTPUT_PORT_TYPE
+lout0c <= hex0[2].DB_MAX_OUTPUT_PORT_TYPE
+lout0d <= hex0[3].DB_MAX_OUTPUT_PORT_TYPE
+lout0e <= hex0[4].DB_MAX_OUTPUT_PORT_TYPE
+lout0f <= hex0[5].DB_MAX_OUTPUT_PORT_TYPE
+lout0g <= hex0[6].DB_MAX_OUTPUT_PORT_TYPE
+lout1a <= hex1[0].DB_MAX_OUTPUT_PORT_TYPE
+lout1b <= hex1[1].DB_MAX_OUTPUT_PORT_TYPE
+lout1c <= hex1[2].DB_MAX_OUTPUT_PORT_TYPE
+lout1d <= hex1[3].DB_MAX_OUTPUT_PORT_TYPE
+lout1e <= hex1[4].DB_MAX_OUTPUT_PORT_TYPE
+lout1f <= hex1[5].DB_MAX_OUTPUT_PORT_TYPE
+lout1g <= hex1[6].DB_MAX_OUTPUT_PORT_TYPE
+lout2a <= hex2[0].DB_MAX_OUTPUT_PORT_TYPE
+lout2b <= hex2[1].DB_MAX_OUTPUT_PORT_TYPE
+lout2c <= hex2[2].DB_MAX_OUTPUT_PORT_TYPE
+lout2d <= hex2[3].DB_MAX_OUTPUT_PORT_TYPE
+lout2e <= hex2[4].DB_MAX_OUTPUT_PORT_TYPE
+lout2f <= hex2[5].DB_MAX_OUTPUT_PORT_TYPE
+lout2g <= hex2[6].DB_MAX_OUTPUT_PORT_TYPE
+lout3a <= hex3[0].DB_MAX_OUTPUT_PORT_TYPE
+lout3b <= hex3[1].DB_MAX_OUTPUT_PORT_TYPE
+lout3c <= hex3[2].DB_MAX_OUTPUT_PORT_TYPE
+lout3d <= hex3[3].DB_MAX_OUTPUT_PORT_TYPE
+lout3e <= hex3[4].DB_MAX_OUTPUT_PORT_TYPE
+lout3f <= hex3[5].DB_MAX_OUTPUT_PORT_TYPE
+lout3g <= hex3[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab05|seg_7:inst1
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab05|BCDcounter:inst40
+Q1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+clean => inst16.ACLR
+clean => inst10.ACLR
+clean => inst22.ACLR
+clean => inst28.ACLR
+clk => inst16.CLK
+clk => inst10.CLK
+clk => inst22.CLK
+clk => inst28.CLK
+D0 => inst8.IN1
+Enable => inst4.IN0
+D2 => inst20.IN1
+D3 => inst26.IN1
+D1 => inst14.IN1
+Q2 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CO <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab05|10bitscounter:inst
+Q0 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+clean => inst10.ACLR
+clean => inst16.ACLR
+clean => inst22.ACLR
+clean => inst28.ACLR
+clean => inst34.ACLR
+clean => inst40.ACLR
+clean => inst46.ACLR
+clean => inst52.ACLR
+clean => inst58.ACLR
+clean => inst64.ACLR
+clk => inst10.CLK
+clk => inst16.CLK
+clk => inst22.CLK
+clk => inst28.CLK
+clk => inst34.CLK
+clk => inst40.CLK
+clk => inst46.CLK
+clk => inst52.CLK
+clk => inst58.CLK
+clk => inst64.CLK
+Load => inst8.IN0
+Load => inst.IN0
+Load => inst14.IN0
+Load => inst20.IN0
+Load => inst26.IN0
+Load => inst32.IN0
+Load => inst38.IN0
+Load => inst44.IN0
+Load => inst50.IN0
+Load => inst56.IN0
+Load => inst62.IN0
+D0 => inst8.IN1
+Count => inst4.IN0
+Q1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst14.IN1
+Q2 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst20.IN1
+Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst26.IN1
+Q4 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D4 => inst32.IN1
+Q5 <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+D5 => inst38.IN1
+Q6 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+D6 => inst44.IN1
+Q7 <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+D7 => inst50.IN1
+Q8 <= inst58.DB_MAX_OUTPUT_PORT_TYPE
+D8 => inst56.IN1
+Q9 <= inst64.DB_MAX_OUTPUT_PORT_TYPE
+D9 => inst62.IN1
+
+
+|Lab05|freq_div_1KHz:inst3
+clk_in => clk_out~reg0.CLK
+clk_in => counter[0].CLK
+clk_in => counter[1].CLK
+clk_in => counter[2].CLK
+clk_in => counter[3].CLK
+clk_in => counter[4].CLK
+clk_in => counter[5].CLK
+clk_in => counter[6].CLK
+clk_in => counter[7].CLK
+clk_in => counter[8].CLK
+clk_in => counter[9].CLK
+clk_in => counter[10].CLK
+clk_in => counter[11].CLK
+clk_in => counter[12].CLK
+clk_in => counter[13].CLK
+clk_in => counter[14].CLK
+clk_in => counter[15].CLK
+clk_in => counter[16].CLK
+clk_in => counter[17].CLK
+clk_in => counter[18].CLK
+clk_in => counter[19].CLK
+clk_in => counter[20].CLK
+clk_in => counter[21].CLK
+clk_in => counter[22].CLK
+clk_in => counter[23].CLK
+clk_in => counter[24].CLK
+clk_in => counter[25].CLK
+clk_in => counter[26].CLK
+clk_in => counter[27].CLK
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => clk_out.OUTPUTSELECT
+
+
+|Lab05|seg_7:inst2
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab05|Mod6counter:inst41
+Q1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+clean => inst16.ACLR
+clean => inst10.ACLR
+clean => inst22.ACLR
+clean => inst28.ACLR
+clk => inst16.CLK
+clk => inst10.CLK
+clk => inst22.CLK
+clk => inst28.CLK
+D0 => inst8.IN1
+Enable => inst4.IN0
+D2 => inst20.IN1
+D3 => inst26.IN1
+D1 => inst14.IN1
+Q2 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab05|seg_7:inst15
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab05|BCDcounter:inst42
+Q1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+clean => inst16.ACLR
+clean => inst10.ACLR
+clean => inst22.ACLR
+clean => inst28.ACLR
+clk => inst16.CLK
+clk => inst10.CLK
+clk => inst22.CLK
+clk => inst28.CLK
+D0 => inst8.IN1
+Enable => inst4.IN0
+D2 => inst20.IN1
+D3 => inst26.IN1
+D1 => inst14.IN1
+Q2 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CO <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab05|seg_7:inst26
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab05|Mod6counter:inst43
+Q1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+clean => inst16.ACLR
+clean => inst10.ACLR
+clean => inst22.ACLR
+clean => inst28.ACLR
+clk => inst16.CLK
+clk => inst10.CLK
+clk => inst22.CLK
+clk => inst28.CLK
+D0 => inst8.IN1
+Enable => inst4.IN0
+D2 => inst20.IN1
+D3 => inst26.IN1
+D1 => inst14.IN1
+Q2 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

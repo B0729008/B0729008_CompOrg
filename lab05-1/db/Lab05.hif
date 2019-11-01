@@ -1,0 +1,197 @@
+Quartus II
+Version 10.0 Build 218 06/27/2010 SJ Web Edition
+13
+1247
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+10bitscounter
+# storage
+db|Lab05.(1).cnf
+db|Lab05.(1).cnf
+# case_insensitive
+# source_file
+10bitscounter.bdf
+737db6126fd8e49ee7bc1ccc15f4d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+10bitscounter:inst
+}
+# macro_sequence
+
+# end
+# entity
+7447
+# storage
+db|Lab05.(2).cnf
+db|Lab05.(2).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|others|maxplus2|7447.bdf
+86d3a63c39de893667fc24b13bc4239
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+BCDcounter
+# storage
+db|Lab05.(3).cnf
+db|Lab05.(3).cnf
+# case_insensitive
+# source_file
+bcdcounter.bdf
+3148a85b0d1e09a1a3b276929c1fa7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+BCDcounter:inst40
+BCDcounter:inst42
+}
+# macro_sequence
+
+# end
+# entity
+Mod6counter
+# storage
+db|Lab05.(4).cnf
+db|Lab05.(4).cnf
+# case_insensitive
+# source_file
+mod6counter.bdf
+d2d92054b929cb2620f1263975191ebb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mod6counter:inst41
+Mod6counter:inst43
+}
+# macro_sequence
+
+# end
+# entity
+freq_div_1KHz
+# storage
+db|Lab05.(5).cnf
+db|Lab05.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+freq_div_1hz (1).v
+56364ce70e7eb9db65b76e6e4a587a
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+freq_div_1KHz:inst3
+}
+# macro_sequence
+CLK_IN_FREQ50000HALF_FREQ25000
+# end
+# entity
+seg_7
+# storage
+db|Lab05.(6).cnf
+db|Lab05.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+seg_7.v
+873e35ce485d11bb296b784344ce0f3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+seg_7:inst1
+seg_7:inst2
+seg_7:inst15
+seg_7:inst26
+}
+# macro_sequence
+
+# end
+# entity
+Lab05
+# storage
+db|Lab05.(0).cnf
+db|Lab05.(0).cnf
+# case_insensitive
+# source_file
+lab05.bdf
+7eb5fdfd8a12f272c73d75b746eae
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
