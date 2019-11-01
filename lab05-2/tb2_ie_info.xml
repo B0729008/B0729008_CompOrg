@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for ALTERA CORPORATION-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>32</AddressBits>
+		<ApplicationError>
+		<Bits>64</Bits>
+		<CommandLine>quartus</CommandLine>
+		<ErrorMessage>Access Violation at 0X11D8AE7B</ErrorMessage>
+		<Line>0</Line>
+		<Platform>windows</Platform>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	 0x11d8ae7a: edt_gedq + 0x4ae7a (?update_copy_paste@GEDQ_FRAME_WND@@IAEXXZ + 0x14a)
+	 0x11d936d8: edt_gedq + 0x536d8 (?update_actions@GEDQ_FRAME_WND@@UAEXXZ + 0x8)
+	   0x6061a2: SYS_QGQ + 0x61a2 (?about_to_show_edit_menu@QGQ_MAIN_WINDOW@@IAEXXZ + 0x72)
+	   0x606b58: SYS_QGQ + 0x6b58 (?on_sub_wnd_activated@QGQ_MAIN_WINDOW@@QAEXPAVQMdiSubWindow@@@Z + 0xb8)
+	   0x607491: SYS_QGQ + 0x7491 (?qt_metacall@QGQ_MAIN_WINDOW@@UAEHW4Call@QMetaObject@@HPAPAX@Z + 0x391)
+	 0x670db39e: QtCore4 + 0xdb39e (?metacall@QMetaObject@@SAHPAVQObject@@W4Call@1@HPAPAX@Z + 0x3e)
+	 0x6531fbcb: QtGui4 + 0x31fbcb (?paintEvent@QMdiArea@@MAEXPAVQPaintEvent@@@Z + 0x12bb)
+	 0x65322c09: QtGui4 + 0x322c09 (?event@QMdiArea@@MAE_NPAVQEvent@@@Z + 0x3f9)
+	 0x65323a6a: QtGui4 + 0x323a6a (?qt_metacall@QMdiArea@@UAEHW4Call@QMetaObject@@HPAPAX@Z + 0x12a)
+	   0xa948da: GCL_AFCQ + 0x348da (?qt_metacall@AFCQ_MDI_AREA@@UAEHW4Call@QMetaObject@@HPAPAX@Z + 0x1a)
+	 0x670db39e: QtCore4 + 0xdb39e (?metacall@QMetaObject@@SAHPAVQObject@@W4Call@1@HPAPAX@Z + 0x3e)
+	 0x653240dc: QtGui4 + 0x3240dc (?windowStateChanged@QMdiSubWindow@@IAEXV?$QFlags@W4WindowState@Qt@@@@0@Z + 0x2c)
+	 0x650604b6: QtGui4 + 0x604b6 (?event@QWidget@@MAE_NPAVQEvent@@@Z + 0x5c6)
+	 0x6531a2b9: QtGui4 + 0x31a2b9 (?createPopupMenu@QMainWindow@@UAEPAVQMenu@@XZ + 0x3ec9)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>0</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation/>
+			<TopLevelEntityName/>
+		</Compilation>
+		<DateInvoked>2019/11/01 16:30:12</DateInvoked>
+		<ElapsedTime>5144</ElapsedTime>
+		<IP>192.168.68.137</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>true</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>12</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>3192</CPUSpeed>
+			<Hostname>CSIER3-09</Hostname>
+			<NIC>
+				<Address>40b0769135f8</Address>
+			</NIC>
+			<NIC>
+				<Address>40b0769135f7</Address>
+			</NIC>
+			<OS>Windows Vista</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.2</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+			<TotalVirtualRAM>0</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName/>
+			<Revision/>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>71126647649784.156896408603492</InstallationID>
+			<Version>
+				<Build>218</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>0</ServicePack>
+				<VersionNumber>10</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>71126647649784.156896408906116</UserID>
+			<UserName>user</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2010-04-23</SchemaVersion>
+</ProgramExecution>
+

@@ -1,0 +1,136 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\10.0
+v\10bitscounter 
+I1]?1UmnG2[]lX:>`MGKza1
+VicTUTf@cK4eIX8ROoWn]93
+Z0 dC:\altera\10.0\Lab05
+w1572595448
+8C:/altera/10.0/Lab05/10bitscounter.v
+FC:/altera/10.0/Lab05/10bitscounter.v
+L0 19
+Z1 OV;L;6.5e;42
+r1
+31
+Z2 !s102 -nocovercells
+Z3 o-work work -nocovercells -O0
+n@13410bitscounter@040
+!s100 @j0VnG;2jXWUcL>^ICK=83
+!s85 0
+!s101 -O0
+v\7447 
+!s100 S_`aRn`E<4VHz?J5cfk`_2
+I[40bTLZLi?5gofnPU>W5F2
+VG47bPYf8kDea_=^QHk8;l0
+Z4 dC:\altera\10.0\Lab05
+w1572601029
+8C:/altera/10.0/quartus/libraries/others/maxplus2/7447.v
+FC:/altera/10.0/quartus/libraries/others/maxplus2/7447.v
+L0 19
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+R3
+n@1347447@040
+vbcdcounter
+IIOb89N_O<f@0miH9]_?F93
+VW63Rbb1A>BPLMmNb:d^dO1
+R4
+w1572595459
+8C:/altera/10.0/Lab05/bcdcounter.v
+FC:/altera/10.0/Lab05/bcdcounter.v
+L0 19
+R1
+r1
+31
+R2
+R3
+!s100 3EAl7>inJz@@d2Bb:>iGY3
+!s85 0
+!s101 -O0
+vfreq_div_1KHz
+I<6]TUV>;<iz4lOA3QGYm31
+VTci4c;3^=]R4U9mPXPd=l0
+R4
+w1572596150
+8C:/altera/10.0/Lab05/freq_div_1Hz (1).v
+FC:/altera/10.0/Lab05/freq_div_1Hz (1).v
+L0 28
+R1
+r1
+31
+R2
+R3
+nfreq_div_1@k@hz
+!s100 Y93fDbob2[g]?EV4A51z33
+!s85 0
+!s101 -O0
+vlab05
+IdI;JclVV0@0>GTdHRNU?Y0
+V3TR;L^Wdngo1;aOk`YzL_2
+R4
+w1572600824
+8C:/altera/10.0/Lab05/lab05.v
+FC:/altera/10.0/Lab05/lab05.v
+L0 19
+R1
+r1
+31
+R2
+R3
+!s100 N2a]?Y>lb2Tocj9hi5;kS1
+!s85 0
+!s101 -O0
+vmod6counter
+IeX9e[dnae;WlGRzg=DoAL0
+VJLnFU`h8RS18FTPjS[M=62
+R4
+w1572600904
+8C:/altera/10.0/Lab05/mod6counter.v
+FC:/altera/10.0/Lab05/mod6counter.v
+L0 19
+R1
+r1
+31
+R2
+R3
+!s100 EYUZ]85hUGc6_C[U5bS<`2
+!s85 0
+!s101 -O0
+vseg_7
+Ie63e?^A3hdm`aOfc0X:@01
+VMBcg1jk64_`24GIK1e1=I2
+R4
+w1572597379
+8C:/altera/10.0/Lab05/seg_7.v
+FC:/altera/10.0/Lab05/seg_7.v
+L0 1
+R1
+r1
+31
+R2
+R3
+!s100 Q?Zd1AeEU:DFLTzgz`4C91
+!s85 0
+!s101 -O0
+vtb
+ILmCQ8lgLK7T?LbkmiMKY>1
+VV@Xn<HnSRM[I5c1?BH]3a3
+R4
+w1572600415
+8C:/altera/10.0/Lab05/tb.v
+FC:/altera/10.0/Lab05/tb.v
+L0 14
+R1
+r1
+31
+R2
+R3
+!s100 ClAI=>2:eGhFY7hMz?1L^1
+!s85 0
+!s101 -O0

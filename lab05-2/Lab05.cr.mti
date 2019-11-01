@@ -1,0 +1,36 @@
+C:/altera/10.0/Lab05/10bitscounter.v {1 {vlog -work work -nocovercells C:/altera/10.0/Lab05/10bitscounter.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module \10bitscounter 
+
+Top level modules:
+	\10bitscounter 
+
+} {} {}} {C:/altera/10.0/Lab05/freq_div_1Hz (1).v} {1 {vlog -work work -nocovercells {C:/altera/10.0/Lab05/freq_div_1Hz (1).v}
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module freq_div_1KHz
+
+Top level modules:
+	freq_div_1KHz
+
+} {} {}} C:/altera/10.0/Lab05/seg_7.v {1 {vlog -work work -nocovercells C:/altera/10.0/Lab05/seg_7.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module seg_7
+
+Top level modules:
+	seg_7
+
+} {} {}} C:/altera/10.0/Lab05/bcdcounter.v {1 {vlog -work work -nocovercells C:/altera/10.0/Lab05/bcdcounter.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module bcdcounter
+
+Top level modules:
+	bcdcounter
+
+} {} {}} C:/altera/10.0/Lab05/tb.v {1 {vlog -work work -nocovercells C:/altera/10.0/Lab05/tb.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}}
