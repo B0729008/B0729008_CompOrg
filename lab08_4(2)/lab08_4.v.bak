@@ -1,0 +1,10 @@
+module lab08_4(X,T,clk);
+	input X;
+	input T;
+	input clk;
+	
+	reg R;
+	
+	always @(posedge clk) begin
+		case(R)
+			2'b00:be
