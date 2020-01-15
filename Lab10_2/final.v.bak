@@ -1,0 +1,125 @@
+module final(RW,DA,AA,BA,MB,FS,MD,Datain,F,clk);
+	input MD;
+	input MB;
+	input [3:0]FS;
+	input [1:0]DA;
+	input [1:0]AA;
+	input [1:0]BA;
+	input [7:0]Datain;
+	input RW;
+	input clk;
+	
+	output [7:0]F;
+	
+	reg [7:0]regR0;
+	reg [7:0]regR1;
+	reg [7:0]regR2;
+	reg [7:0]regR3;
+	
+	reg [7:0]regA;
+	reg [7:0]regB;
+	reg [7:0]regG;
+	
+	always @(posedge clk)begin
+		case(RW)
+			1'b1:
+				case(DA)
+					2'b00:
+						if(MD==1)
+							regR0=Datain;
+						else
+							regR0=F;
+					2'b01:
+						if(MD==1)
+							regR1=Datain;
+						else
+							regR1=F;
+					2'b10:
+						if(MD==1)
+							regR2=Datain;
+						else
+							regR2=F;
+					2'b11:
+						if(MD==1)
+							regR3=Datain;
+						else
+							regR3=F;
+				endcase
+		endcase
+	end
+	
+	always @(posedge clk)begin
+		case(AA)
+			2'b00:
+				regA=regR0;
+			2'b01:
+				regA=regR1;
+			2'b10:
+				regA=regR2;
+			2'b11:
+				regA=regR3;
+		endcase	
+	end
+	
+	always @(posedge clk)begin
+		case(BA)
+			2'b00:
+				if(MB==1)
+					regB=8'b00000000;
+				else
+					regB=regR0;
+			2'b01:
+				if(MB==1)
+					regB=8'b00000000;
+				else
+					regB=regR1;
+			2'b10:
+				if(MB==1)
+					regB=8'b00000000;
+				else
+					regB=regR2;
+			2'b11:
+				if(MB==1)
+					regB=8'b00000000;
+				else
+					regB=regR3;
+		endcase		
+	end
+	
+	always @(posedge clk)begin
+		case(FS)
+			4'b0000:
+				regG=regA;
+			4'b0001:
+				regG=regA+8'b00000001;
+			4'b0010:
+				regG=regA+regB;
+			4'b0011:
+				regG=regA+regB+8'b00000001;
+			4'b0100:
+				regG=regA+(~regB);
+			4'b0101:
+				regG=regA+(~regB)+8'b00000001;
+			4'b0110:
+				regG=regA+8'b11111111;
+			4'b0111:
+				regG=regA;
+			4'b1000:
+				regG=regA&regB;
+			4'b1001:
+				regG=regA|regB;
+			4'b1010:
+				regG=regA^regB;
+			4'b1011:
+				regG=(~regA);
+			4'b1100:
+				regG=regB;
+			4'b1101:
+				regG={regB[6:0],1'b0};
+			4'b1110:
+				regG={1'b0,regB[7:1]};
+		endcase	
+	end
+	assign F=regG;
+	
+endmodule
