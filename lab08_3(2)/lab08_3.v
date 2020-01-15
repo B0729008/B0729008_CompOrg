@@ -1,0 +1,17 @@
+module lab08_3(A,B,X,Y,clk);
+	input X;
+	input clk;
+	output A;
+	output B;
+	output Y;
+	
+	reg A;
+	reg B;
+	
+	always @(posedge clk) begin
+		A<=(A|B)&X;
+		B<=(~A)&X;
+	end
+	
+	assign Y=(A|B)&(~X);
+endmodule
