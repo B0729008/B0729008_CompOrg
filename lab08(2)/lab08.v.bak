@@ -1,0 +1,88 @@
+module lab8_1(A,S,L,clk){
+	input [7:0]A;
+	input S;
+	input L;
+	input clk;
+	
+	wire [7:0]add_out;
+	wire [7:0]mux_out;
+	wire [7:0]loadreg_out;
+	
+	adder adder(
+		.a(A),
+		.b(loadreg_out),
+		.sum(add_out)
+	);
+	
+	mux mux_2(
+		.d_0(8'b00000000),
+		.d_1(add_out),
+		.d(S),
+		.dout(mux_out)
+	);
+	
+	register loadreg(
+		.load_data(mux_out),
+		.data(loadreg_out),
+		.load(L),
+		.clk(clk)
+	);
+	
+	
+	module adder{
+	#(parameter WIDTH=8)
+	(
+		 input               carry_in,
+		 input  [WIDTH-1: 0] a,
+		 input  [WIDTH-1: 0] b,
+		 output [WIDTH-1: 0] sum,
+		 output              carry_out
+	);
+
+		 assign {carry_out, sum} = a + b + carry_in;
+
+	endmodule};
+	
+	module mux_2{
+	#(parameter WIDTH=8)
+	(
+		 input  [WIDTH-1: 0]  d_0,
+		 input  [WIDTH-1: 0]  d_1,
+		 input                d,
+		 output [WIDTH-1: 0]  dout
+	);
+
+	assign dout = (d==1'b1)? d_1: d_0;
+
+	endmodule};
+	
+	module register{
+	#(parameter WIDTH=8)
+	(
+		 input                clean,
+		 input                clk,
+		 input                load,
+		 input  [WIDTH-1: 0]  load_data,
+		 output [WIDTH-1: 0]  data
+	);
+
+	reg [WIDTH-1: 0]  d;
+
+	always @(posedge clk) begin
+		 if(clean == 1'b1) begin
+			 d <= 0; 
+		 end
+		 else begin
+			  if(load == 1'b1) begin
+					d <= load_data;
+			  end
+			  else begin
+					d <= d;
+			  end
+		 end
+	end
+
+	assign data = d;
+
+	endmodule};
+endmodule}
