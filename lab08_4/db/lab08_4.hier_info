@@ -1,0 +1,8 @@
+|lab08_4
+X => S.DATAA
+T => S.DATAB
+clk => S.CLK
+out[0] << S.DB_MAX_OUTPUT_PORT_TYPE
+out[1] << <GND>
+
+
