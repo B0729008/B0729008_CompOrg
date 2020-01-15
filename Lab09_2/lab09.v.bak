@@ -1,0 +1,58 @@
+module lab09(A,B,G,carry,S)
+	input [7:0]A;
+	input [7:0]B;
+	input [2:0]S;
+	input carry;
+	output [7:0]G;
+	
+	reg [7:0] regA;
+	reg [7:0] regB;
+	reg [7:0] regG;
+	reg [2:0] regS;
+	
+	always @(*)begin
+		assign regA=A;
+		assign regB=B;
+		assign regS=S;
+		case(regS)
+			3'b000:
+				regG=A+carry;
+			3'b001:
+				regG=A+B+carry;
+			3'b010:
+				regG=A+(~B)+carry;
+			3'b011:
+				regG=A-(~carry);
+			3'b100:
+				begin
+					if(carry==0)
+						regG=A&B;
+					else
+						regG=A|B;
+				end
+			3'b101:
+				begin
+					if(carry==0)
+						regG=A^B;
+					else
+						regG=~A;
+				end
+			3'b110:
+				begin
+					if(carry==0)
+						regG=A&B;
+					else
+						regG=A|B;
+				end
+			3'b111:
+				begin
+					if(carry==0)
+						regG=A^B;
+					else
+						regG=~A;
+				end
+		endcase
+	end
+	assign G=regG;
+endmodule
+	
