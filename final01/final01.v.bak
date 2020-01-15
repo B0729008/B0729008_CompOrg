@@ -1,0 +1,41 @@
+module final01(IR,Data_in,PC,Address_out,Data_out,MW,clk)
+	input clk,reset;
+	input [15:0]IR;
+	input [7:0]Data_in;
+	
+	output MW;
+	output [7:0]PC;
+	output [7:0]Address_out;
+	output [7:0]Data_out;
+	
+	reg [7:0]PC;
+	reg [7:0]Address_out;
+	reg [7:0]Data_out;
+	reg [6:0]Opcode;
+	reg [7:0]OP;		//For Immediate
+	reg [5:0]AD;		//For Jump and Branch
+	reg [2:0]DA;		//DR
+	reg [2:0]AA;		//SA
+	reg [2:0]BA;		//SB
+	reg MW,MB,MD,RW;
+	reg PL,JB,BC;
+	reg [3:0]FS;
+	
+	always @(posedge clk)begin
+		Opcode=IR[15:9];
+		DA=IR[8:6];
+		AA=IR[5:3]:
+		BA=IR[2:0];
+		OP={5'b00000,IR[2:0]};
+		AD={IR[8:6],IR[2:0]};
+		MB=IR[15];
+		MD=IR[13];
+		RW=~IR[14];
+		MW=~IR[15]&IR[14];
+		PL=IR[15]&IR[14];
+		JB=IR[13];
+		BC=IR[9];
+		FS={IR[12:10],IR[9]&~(IR[15]&IR[14])};
+		
+		
+		

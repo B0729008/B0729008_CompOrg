@@ -1,0 +1,15 @@
+module decoder(Instruction_in,control);
+	input [15:0]Instruction_in;
+	output [19:0]control;
+	control[19:17]=Instruction_in[8:6];
+	control[16:14]=Instruction_in[5:3];
+	control[13:11]=Instruction_in[2:0];
+	control[10]=Instruction_in[15];
+	control[9:6]={Instruction_in[12:10],Instruction_in[9]&~(Instruction_in[14]&Instruction_in[15])};
+	control[5]=Instruction_in[13];
+	control[4]=~Instruction_in[14];
+	control[3]=Instruction_in[14]&~Instruction_in[15];
+	control[2]=Instruction_in[14]&Instruction_in[15];
+	control[1]=Instruction_in[13];
+	control[0]=Instruction_in[9];
+endmodule

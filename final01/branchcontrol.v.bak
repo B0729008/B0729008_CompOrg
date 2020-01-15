@@ -1,0 +1,26 @@
+module branchcontrol(PL,JB,BC,N,Z,AD,Bas_A,PC,clk)
+	input PL,JB,BC,N,Z,clk;
+	input [5:0]AD;
+	input [7:0]Bas_A;
+	
+	output [7:0]PC;
+	
+	reg [7:0]regPC;
+	
+	always @(posedge clk)begin
+		case(JB)
+			1'b0:
+				if(Bc==0)
+					regPC=PC+8'b00000001;
+				else
+					if(AD[5]==0)
+						regPC=PC+{2'b00,AD};
+					else
+						regPC=PC+{2'b11,AD};
+			1'b1:
+				regPC=Bas_A;
+		endcase
+	end
+	assign PC=regPC;
+endmodule
+		
